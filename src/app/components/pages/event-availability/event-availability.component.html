@@ -1,0 +1,51 @@
+<div *ngIf="_sport && _event">
+	<app-parallax-header [img_url]="_sport.banner1_img.src"></app-parallax-header>
+	<div class="individual_sport_main_body">
+		<div class="disney_soccer_page_event">
+			<div>
+				<div class="row" style="/*max-width:100%;*/margin-left:0px;margin-right:0px;">
+					<div class="col" id="heading_col">
+						<h2 class="sport_page_content_title_a">{{_event.title}}</h2>
+						<h4 class="sport_page_content_date_a">{{getFormmatedDates()}}</h4>
+					</div>
+				</div>
+			</div>
+			<div class="SPORT_PAGE_EVENT_CONTENT_DIV">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 event_ref_image_container">
+							<div>
+								<img class="img-fluid"
+								[src]="_event.ref_image.src">
+							</div>
+						</div>
+						<div class="col-md-9" style="max-height:400px;overflow:hidden">
+							<app-carousel-small [images]="_event.carousel_images" ></app-carousel-small>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div>
+					<p style="text-align:center;font-size:1.2em;color:#666666;">Careli Tours 
+						se enorgullese en ser el partner oficial para
+						&nbsp;<strong>{{_event.title}} &nbsp;</strong>Descuentos en acomodaciones para el hotel y
+						tickets para los parques temáticos de &nbsp;<em>Walt
+							Disney World</em>® ahora disponibles para jugadores y fans.<br></p>
+					<p style="text-align:center;font-size:1.2em;color:#666666;font-weight:bolder;margin-top:1em;margin-bottom:0px;">
+						Debajo encontrarás información relacionada con el evento "{{_event.title}}"&nbsp;<br>proveida por Careli Tours.<br></p>
+				</div>
+				<hr>
+				<h1 class="event_content_dates_rates_title" *ngIf="false">Proposed Dates &amp; Rates<br></h1>
+				<div class="container" style="margin-top:2em;">
+					<div class="row">
+						<div class="col-md-6" [innerHtml]="getScapedHTML(_event.propsedDatesText)">
+						</div>
+						<div class="col-md-6" [innerHtml]="getScapedHTML(_event.proposedRatesText)">
+						</div>
+					</div>
+				</div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+</div>

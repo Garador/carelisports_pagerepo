@@ -1,0 +1,35 @@
+<div>
+	<app-carousel [images]="bigCarouselImages"></app-carousel>
+	<div class="section">
+		<app-something-magical [smallCarouselImages]="smallCarouselImages"></app-something-magical>
+	</div>
+	<div class="features-boxed section">
+		<div class="container">
+			<div class="intro">
+				<h2 class="text-center">Próximos Eventos</h2>
+				<p class="text-center">Próximos eventos para Disney Sports</p>
+			</div>
+			<div class="row justify-content-center features">
+				<div class="col-sm-6 col-md-5 col-lg-4 item" *ngFor="let event of upcomingEvents">
+					<div class="box">
+						<div class="img_container_1">
+							<img class="upcoming_event_img" [src]="event.ref_image.src">
+						</div>
+						<h3 class="name"><strong>{{event.title}}</strong><br></h3>
+						<em>{{getFormattedDates(event)}}</em>
+						<p class="description-text" [innerHTML]="event.description_short">
+						</p>
+						<a [routerLink]="getBookingUrl(event)" class="learn-more">Apartar Ahora »</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="contact_us_section">
+		<app-jotform
+			[id]="'contactUsJotform'"
+			[src]="'https://form.jotformz.com/91843343619664'"
+			[title]="'Contáctanos'"
+		></app-jotform>
+	</div>
+</div>

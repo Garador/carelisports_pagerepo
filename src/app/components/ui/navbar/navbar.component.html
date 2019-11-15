@@ -1,0 +1,57 @@
+<nav class="navbar navbar-light navbar-expand-lg fixed-top navigation-clean custom-navbar" style="padding:0px;background-color:rgba(238,58,68, .95);">
+	<div class="container">
+		<a routerLink="./" class="navbar-brand" routerLinkActive="active">
+			<img src="assets/img/CareliSportsLogo.png" style="height:60px;width:auto;" />
+		</a>
+		<button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler" style="margin-right:5px;">
+			<span class="sr-only">Activar Navegación</span><span style="  color:white;">☰</span>
+		</button>
+		<div class="collapse navbar-collapse" id="navcol-1">
+			<ul class="nav navbar-nav ml-auto">
+				<li role="presentation" class="nav-item">
+					<a href="#" class="nav-link">
+						<div class="container" style="padding:0px">
+							<div class="row">
+								<div class="col-3" style="font-size:1.5em;">
+									<i class="fa fa-id-card-o"></i>
+								</div>
+								<div class="col-9" style="font-size:0.75em">
+									<span><strong>Eduardo del Corral</strong></span>
+									<br />
+									<span>+1(832) 537-3040</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li role="presentation" class="nav-item">
+					<a routerLink="/#/" class="nav-link">
+						Principal
+					</a>
+				</li>
+				<li class="dropdown" id="sportsDropdown">
+					<a data-toggle="dropdown" aria-expanded="false" 
+					href="#" 
+					class="dropdown-toggle nav-link dropdown-toggle menu_expandable">Eventos</a>
+					<div role="menu" class="dropdown-menu">
+						<a *ngFor="let sport of _sports" [routerLink]="getSportId(sport)" class="nav-link dropdown-item">{{sport.title}}</a>
+					</div>
+				</li>
+				<li role="presentation" class="nav-item">
+					<a [routerLink]="getTicketsUrl()" class="nav-link">
+						Tickets
+					</a>
+				</li>
+				<li class="dropdown">
+					<a data-toggle="dropdown" aria-expanded="false" href="#" class="dropdown-toggle nav-link dropdown-toggle menu_expandable">Más</a>
+					<div role="menu" class="dropdown-menu">
+						<a role="presentation" [routerLink]="getDisneyExperienceUrl()" class="dropdown-item">Disney Experience</a>
+						<a role="presentation" [routerLink]="getTicketsUrl()" class="dropdown-item">Agenda con nosotros</a>
+						<a role="presentation" href="#" class="dropdown-item">Contáctanos</a>
+						<a role="presentation" href="#" class="dropdown-item">FAQ</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>

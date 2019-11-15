@@ -1,0 +1,11 @@
+.parallax_a > div {
+    background-size: cover !important;
+    background-position: center center !important;
+    position: absolute !important;
+    height: 200% !important;
+    width: 100% !important;
+    top: 0px !important;
+    left: 0px !important;
+    z-index: -3000000000 !important;
+    transform: translate3d(0px, -15.8155%, 0px) !important;
+}

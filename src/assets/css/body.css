@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+  #something_magical {
+    padding-left:10vw;
+    padding-right:10vw;
+    margin-bottom:2em;
+  }
+}
+
+.section {
+  border-top:1em solid rgb(230,32,54);
+}
+
+.upcoming_event_img {
+  margin-bottom:1em;
+}
+
+#contact_us_section {
+  padding-top:1em;
+  padding-bottom:1em;
+}
+
+#carousel-2 > div > div > img {
+  width:100%;
+}
+

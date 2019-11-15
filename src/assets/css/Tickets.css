@@ -1,0 +1,77 @@
+.TICKET_FIELD_SEPARATOR {
+  background-color:black;
+}
+
+.TICKET_FIELD_SEPARATOR_B {
+  height:5px;
+}
+
+.DIV_BUTTON_FOR_PLAN {
+  background-color:grey;
+  padding:1em;
+  border-radius:5px;
+  color:white;
+  text-transform:uppercase;
+  text-align:center;
+}
+
+.BASE_TICKET_PLAN_CONTENT > p > strong {
+  color:rgb(20,21,21);
+}
+
+.PARK_HOPPER_PLAN_CONTENT > p > strong {
+  color:rgb(34,81,163);
+}
+
+.PARK_HOPPER_PLAN_CONTENT > p > strong {
+  color:rgb(34,81,163);
+}
+
+.PARK_HOPPER_PLUS_PLAN_CONTENT > p > strong {
+  color:rgb(251,49,42);
+}
+
+.BASE_TICKET_PLAN_CONTENT > .DIV_BUTTON_FOR_PLAN {
+  background-color:GREY;
+}
+
+.PARK_HOPPER_PLUS_PLAN_TITLE {
+  color:rgb(251,49,42);
+}
+
+.PARK_HOPPER_PLAN_TITLE {
+  color:rgb(34,81,163);
+}
+
+.PARK_HOPPER_PLAN_CONTENT > .DIV_BUTTON_FOR_PLAN {
+  background-color:rgb(34,81,163);
+}
+
+.PARK_HOPPER_PLUS_PLAN_CONTENT > .DIV_BUTTON_FOR_PLAN {
+  background-color:rgb(251,49,42);
+}
+
+.VCENTER_CONTAINER {
+  height:250px;
+  margin:auto;
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+}
+
+#HOPER_PLUS_PLAN_HIGHLIGHTED_SAVINGS_ROW {
+  background-color:#e62036;
+  color:white;
+}
+
+#HOPER_PLAN_HIGHLIGHTED_SAVINGS_ROW {
+  background-color:rgb(34,81,163);
+  color:white;
+}
+
+.PLAN_SAVINGS_HEADER_ROW {
+  font-size:1.2em;
+}
+

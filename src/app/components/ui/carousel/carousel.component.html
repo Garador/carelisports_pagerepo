@@ -1,0 +1,23 @@
+<div>
+	<div class="carousel slide" data-ride="carousel" data-interval="3000" data-wrap="false" data-keyboard="false" id="carousel-1"
+	style="height:60vh;">
+		<div class="carousel-inner" role="listbox">
+			<div *ngFor="let img of images;"
+			[ngClass]="{'carousel-item carousel-item-main':true, 'active':isActive(img)}" [style]="getDivStyle(img)">
+				<div style="position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,0.75);">
+					<span style="color:rgb(198,198,204);font-size:2em;font-weight:bold;">{{img.caption | uppercase}}</span>
+				</div>
+			</div>
+		</div>
+		<div>
+			<a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+</div>

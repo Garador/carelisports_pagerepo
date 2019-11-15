@@ -1,0 +1,83 @@
+.description-text {
+  max-height: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* styles for '...' */
+.description-text {
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative;
+  /* use this value to count block height */
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 7.2em;
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;
+  /* place for '...' */
+  margin-right: -1em;
+  padding-right: 1em;
+}
+/* create the ... */
+.description-text:before {
+  /* points in the end */
+  content: "...";
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 0;
+  bottom: 0;
+}
+/* hide ... if we have text, which is less than or equal to max lines */
+.description-text:after {
+  /* points in the end */
+  content: "";
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of text */
+  right: 0;
+  /* set width and height */
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  /* bg color = bg color under block */
+  background: white;
+}
+
+@media (min-width: 768px) {
+  #something_magical {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-bottom: 2em;
+  }
+}
+
+.section {
+  border-top: 1em solid rgb(230, 32, 54);
+}
+
+.upcoming_event_img {
+  margin-bottom: 1em;
+}
+
+#contact_us_section {
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
+
+#carousel-2 > div > div > img {
+  width: 100%;
+}
+
+.img_container_1{
+	height: 170px;
+	width: 100%;
+
+	img {
+		height: 170px;
+		max-width: 100%;
+	}
+}
+

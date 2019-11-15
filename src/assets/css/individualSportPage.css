@@ -1,0 +1,78 @@
+#heading_col {
+  text-align:center;
+  text-decoration:underline;
+  color:#333333;
+}
+
+#heading_col {
+  text-align:center;
+  text-decoration:underline;
+  color:#333333;
+}
+
+.col.subheading_col {
+  text-align:center;
+  text-decoration:underline;
+}
+
+.sub_heading {
+  font-size:2em;
+}
+
+@media (min-width: 992px) {
+  #SUBSC_FORM {
+    padding:8vw;
+  }
+}
+
+@media (min-width: 576px) {
+  .SPORT_PAGE_EVENT_CONTENT_DIV {
+    padding:2em;
+  }
+}
+
+@media (min-width: 992px) {
+  .SPORT_PAGE_EVENT_CONTENT_DIV {
+    padding:5em;
+  }
+}
+
+.HEADER_PARALLAX {
+  height:40vh;
+  margin-top:68px;
+  background-position:center;
+  background-size:cover;
+}
+
+@media (min-width: 768px) {
+  .disney_soccer_page_event {
+    padding:1em;
+  }
+}
+
+@media (min-width: 992px) {
+  .disney_soccer_page_event {
+    padding:2em;
+  }
+}
+
+.event_content_dates_rates_title {
+  text-align:center;
+  color:#ca3243;
+  font-weight:bolder;
+}
+
+.sport_page_content_title_a {
+  font-weight:bolder;
+}
+
+.sport_page_content_title_b {
+  font-style:italic;
+  font-weight:bolder;
+  font-size:3em;
+}
+
+.sport_page_content_date_a {
+  font-size:2em;
+}
+

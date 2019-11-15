@@ -1,0 +1,23 @@
+<div>
+	<div *ngIf="_sport">
+		<app-parallax-header [img_url]="_sport.banner1_img.src"></app-parallax-header>
+		<div class="section">
+			<app-something-magical [smallCarouselImages]="smallCarouselImages"></app-something-magical>
+		</div>
+		<div class="section">
+			<app-parallax-header [img_url]="_sport.banner2_img.src"></app-parallax-header>
+		</div>
+		<div class="section sports_upcoming_container">
+			<div id="sports_upcoming_book">
+				<h1>Próximos eventos de {{_sport.title}}</h1>
+				<div *ngIf="hasSports()">
+					<app-event-list-preview *ngFor="let event of _events" [event]="event">
+					</app-event-list-preview>
+				</div>
+				<div *ngIf="!hasSports()">
+					<h3>Actualmente no poseemos eventos para este deporte</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,32 @@
+<div class="container">
+	<div class="row book_sports">
+		<div class="col col-12 col-md-4 event_image_container">
+			<div>
+				<img class="img-fluid"
+				[src]="event.ref_image.src">
+			</div>
+		</div>
+		<!--
+		<div class="col col-12 col-md-4 row_sports_col_a">
+			<div class="event_image_container">
+				<div>
+					<img [src]="event.ref_image.src">
+				</div>
+			</div>
+		</div>
+		-->
+		<div class="col col-12 col-md-4 row_sports_text">
+			<h3>{{event.title}}</h3>
+			<p class="event_date">{{getFormattedDate(event)}}</p>
+			<p class="event_text">
+				{{event.description_short}}
+			</p>
+		</div>
+		<div class="col events_actions_1">
+			<div>
+				<button class="btn btn-primary" type="button" (click)="viewAvailability()">Ver Disponibilidad<i class="fa fa-group"></i></button>
+				<button class="btn btn-primary next_button" type="button" (click)="bookTicketsNow()">Consigue Tickets Ahora<i class="fa fa-ticket"></i></button>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,101 @@
+@media (min-width: 992px) {
+  #MAIN_CONTAINER {
+    margin-left:10vw;
+    margin-right:10vw;
+    margin-bottom:10vh;
+  }
+}
+
+@media (min-width: 300px) {
+  #INTERNAL_CONTAINER {
+    background-color:white;
+    border:2px solid black;
+    min-height:30vh;
+    margin-top:5vh;
+    padding:0em;
+  }
+}
+
+@media (min-width: 768px) {
+  #INTERNAL_CONTAINER {
+    padding:1em;
+  }
+}
+
+#INTERNAL_CONTAINER > h1 {
+}
+
+.VIEW_ALL_EVENTS_BUTTON {
+  min-width:60%;
+  font-size:1.5em;
+  margin-top:2em;
+  position:absolute;
+  right:0;
+  left:0;
+  margin-left:auto;
+  margin-right:auto;
+  bottom:1em;
+}
+
+@media (min-width: 300px) {
+  .EVENT_RED_CONTAINER {
+    color:white;
+    background-color:rgb(230,32,54);
+    text-align:center;
+    margin-top:0em;
+    margin-right:0em;
+    padding-left:0em;
+    padding-right:0em;
+  }
+}
+
+.EVENT_TEXT_CONTAINER {
+  padding:1em;
+  min-height:400px;
+  position:relative;
+  background:#e62036;
+  color:white;
+}
+
+.EVENT_TEXT_CONTAINER > p {
+}
+
+@media (min-width: 576px) {
+  .SEPARATOR {
+    display:none;
+  }
+}
+
+.EVENT_IMAGE_CONTAINER > img {
+  height:400px;
+  position:relative;
+  right:30vh;
+}
+
+.EVENT_IMAGE_CONTAINER {
+  max-width:100%;
+  height:auto;
+  overflow:hidden;
+  position:relative;
+  display:inline-block;
+  text-align:center;
+}
+
+@media (min-width: 992px) {
+  .EVENT_COLUMN {
+    padding:2em;
+  }
+}
+
+@media (min-width: 300px) {
+  .EVENT_COLUMN {
+    padding:.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  .EVENTS_ROW {
+    padding:2em;
+  }
+}
+

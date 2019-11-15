@@ -1,0 +1,96 @@
+.row_sports_col_a {
+  text-align:center;
+}
+
+#sports_upcoming_book {
+  background-color:white;
+}
+
+@media (min-width: 992px) {
+  #sports_upcoming_book {
+    margin-left:10vw;
+    margin-right:10vw;
+    border:2px solid black;
+    border-radius:5px;
+  }
+}
+
+#sports_upcoming_book {
+  padding:1em;
+}
+
+.row_sports_text {
+  text-align:center;
+}
+
+.row_sports_text > .event_date {
+  text-align:center;
+  margin-bottom:0.5em;
+}
+
+.row_sports_text > .event_text {
+  text-align:center;
+}
+
+.events_actions_1 > div > button > .fa {
+  font-size:1.5em;
+  margin-left:1em;
+}
+
+.events_actions_1 > div > button {
+  width:100%;
+  background-color:#ca3243;
+}
+
+.events_actions_1 > div {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.col.events_actions_1 {
+  display:flex;
+  align-items:center;
+}
+
+.next_button {
+  margin-top:1em;
+}
+
+.events_actions_1 > div > button:hover {
+  background-color:red !important;
+}
+
+.row.book_sports {
+  margin-top:2em;
+}
+
+.sports_upcoming_container {
+  background-image:url(../../assets/img/disney+world+all+star+sports+resort+review+grounds+10.jpeg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  border-top:1em solid #ca3243;
+  padding-top:2em;
+  padding-bottom:2em;
+}
+
+.sports_upcoming_book > .event_separator {
+}
+
+.event_separator {
+  height:0.5em;
+  background:#ca3243;
+  width:95%;
+}
+
+@media (min-width: 300px) {
+  .carousel-column {
+    min-height:40vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-column {
+    min-height:32vw;
+  }
+}
+
